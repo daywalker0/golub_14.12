@@ -2255,8 +2255,67 @@
 <script src="js/scrolloverflow.min.js"></script>
 <script src="js/fullpage.js"></script>
 <script src="js/maskedinput.js"></script>
+
 <script type="text/javascript" src="main-index.js"></script>
 <script src="js/cookies.js"></script>
+
+<script>
+    $(document).ready(function (){
+        if ($('.phone_mask').length) {
+            $(".phone_mask").mask("+7 (999) 999-9999");
+        }
+        $('form#order_screen_form').submit(function (){
+            $("#order_screen_form button").attr("disabled", "disabled");
+            var form = $(this);
+            $.ajax({
+                url: '/send.php',
+                type: 'post',
+                data: form.serialize(),
+                success: function (msg){
+                    if(msg == 'success'){
+						form.html('<div class="msg-success-block"><p class="msg-success">Ваша заявка отправлена</p><br><a href="https://golubitskoe-estate.ru/" target="_self" class="_button">Вернуться</a></div>');
+                    }
+                }
+            });
+            return false;
+        });
+        $('form#question_form').submit(function (){
+            $("#question_form button").attr("disabled", "disabled");
+            var form = $(this);
+            var form_data = new FormData(document.querySelector("#question_form"));
+            $.ajax({
+                type: "POST",
+                processData: false,
+                contentType: false,
+                url: '/send2.php',
+                data: form_data
+            }).done(function (msg) {
+                if(msg === 'success'){
+                    form.html('<div class="msg-success-block"><p class="msg-success">Ваша заявка отправлена</p><br><a href="https://golubitskoe-estate.ru/" target="_self" class="_button">Вернуться</a></div>');
+                }
+            });
+            return false;
+        });
+        $('form#question_form2').submit(function (){
+            $("#question_form2 button").attr("disabled", "disabled");
+            var form = $(this);
+
+            var form_data = new FormData(document.querySelector("#question_form2"));
+            $.ajax({
+                type: "POST",
+                processData: false,
+                contentType: false,
+                url: '/send2.php',
+                data: form_data
+            }).done(function (msg) {
+                if(msg === 'success'){
+                    form.html('<div class="msg-success-block"><p class="msg-success">Ваша заявка отправлена</p><br><a href="https://golubitskoe-estate.ru/" target="_self" class="_button">Вернуться</a></div>');
+                }
+            });
+            return false;
+        });
+    });
+</script>
 </body>
 
 </html>
