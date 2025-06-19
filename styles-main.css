@@ -10562,7 +10562,7 @@ input[type=number] {
     position: relative;
     padding-left: 2.125rem;
     display: block;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 #_tourist_title{
     padding-bottom: 11rem;
