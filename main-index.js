@@ -112,8 +112,7 @@ $().ready(function () {
                 if(destination.anchor === "about_point" || destination.anchor === "map_point" || destination.anchor === "map_description_point" || destination.anchor === "news_point"){
                     $('.hide_on_catalog_js').show();
                     $('.hide_on_slider_js').hide();
-                    console.log(destination)
-                    if(destination.anchor === "fond_point"){
+                    if(destination.anchor === "news_point"){
                         $('.head_logo').hide();
                     } else {
                         $('.head_logo').show();
