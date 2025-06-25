@@ -11702,6 +11702,12 @@ input._form_control {
     line-height: 1
 }
 
+@media screen and (max-width: 1440px) {
+    .slide_5 .number {
+        bottom: 100px;
+    }
+}
+
 @media (max-width: 991px) {
     .slide_5 .number {
         left: 2%
@@ -12038,10 +12044,16 @@ input._form_control {
 
 .slide_6 .slide_6_flex .images > img {
     display: block;
-    width: 45%;
+    width: 32%;
     position: relative;
     z-index: 2;
     margin: 0 auto
+}
+
+@media screen and (max-width: 1440px) {
+    .slide_6 .slide_6_flex .images > img {
+        width: 60%;
+    }
 }
 
 .slide_6 .slide_6_flex .images .images_row {
@@ -13250,7 +13262,7 @@ input._form_control {
     }
 }
 
-.news_list .news_item .news_item_hover {
+.news_list .news_item .news_item_hover {.slide_5 .number
     font-family: 'Playfair Display';
     color: transparent;
     background: transparent;
