@@ -10462,7 +10462,7 @@ html {
     font-size: 16px
 }
 
-@media (max-width: 1449px) {
+@media (max-width: 1240px) {
     html {
         font-size: 14px
     }
@@ -10552,12 +10552,6 @@ input[type=number] {
     margin: 0 auto
 }
 
-@media (max-width: 1449px) {
-    ._default_container {
-        padding-left: 3rem
-    }
-}
-
 ._default_title {
     position: relative;
     padding-left: 2.125rem;
@@ -10569,15 +10563,14 @@ input[type=number] {
 }
 
 ._default_title h1 {
-    font-size: 4.25rem;
+    font-size: 5rem;
     line-height: 1;
     margin-bottom: 3.5rem
 }
 
-@media (max-width: 1449px) {
+@media (max-width: 1366px) {
     ._default_title h1 {
-        font-size: 3.25rem;
-        margin-bottom: 2rem;
+        font-size: 4rem
     }
 }
 
@@ -11363,10 +11356,9 @@ input._form_control {
     opacity: .3
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1440px) {
     .main_slider_slide .number {
-        font-size: 21.3rem;
-        line-height: .8
+        font-size: 25.3rem;
     }
 }
 
@@ -11484,7 +11476,16 @@ input._form_control {
 }
 
 .slide_2 ._default_container {
-    padding-top: 12rem
+    padding-top: 12rem;
+    padding-right: 10rem;
+}
+
+@media screen and (max-width: 1440px) {
+    .slide_2 ._default_container {
+        padding-top: 7rem;
+        padding-left: 5rem;
+        padding-right: 2rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -11571,14 +11572,8 @@ input._form_control {
 
 .slide_3 .number {
     bottom: 0;
-    left: 50%;
+    left: 40%;
     line-height: 1
-}
-
-@media (max-width: 991px) {
-    .slide_3 .number {
-        left: 41%
-    }
 }
 
 .slide_3 .slide_3_flex {
@@ -11787,6 +11782,12 @@ input._form_control {
     transition: all .2s linear
 }
 
+@media (max-width: 1440px) {
+    .slide_5 .slide_5_flex .team_items .item .img_wrap {
+        height: 25rem;
+    }
+}
+
 @media (max-width: 991px) {
     .slide_5 .slide_5_flex .team_items .item .img_wrap {
         height: 17rem;
@@ -11851,9 +11852,9 @@ input._form_control {
     transition: all .2s linear
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1440px) {
     .slide_5 .slide_5_flex .team_items .item:hover .img_wrap {
-        height: 17rem
+        height: 25rem
     }
 }
 
@@ -12175,6 +12176,12 @@ input._form_control {
     max-height: 27rem
 }
 
+@media screen and (max-width: 1440px) {
+    .collection_screen .collection_slider img {
+        max-height: 21rem
+    }
+}
+
 @media (max-width: 991px) {
     .collection_screen .collection_slider {
         padding-left: 6.5rem
@@ -12460,10 +12467,13 @@ input._form_control {
         margin-left: -10%;
         margin-top: -10%;
     }
-    ._default_container{
+    .collection_screen ._default_container {
         padding-top: 1rem;
         padding-left: 3rem;
         padding-right: 3rem;
+    }
+    .collection_screen .collection_slider .collection_item h4 {
+        font-size: 1.4rem !important;
     }
     .collection_screen .collection_screen_tabs .collection_tab{
         margin-top: 2rem !important;
@@ -12479,7 +12489,7 @@ input._form_control {
         margin-left: -10%;
         margin-top: -10%;
     }
-    ._default_container{
+    .collection_screen ._default_container {
         padding-top: 5rem;
         padding-left: 5rem;
     }
@@ -12488,9 +12498,6 @@ input._form_control {
     }
     .collection_screen .collection_screen_tabs .collection_tab._default_title h1{
         font-size: 2.5rem !important;
-    }
-    .collection_screen .collection_slider .collection_item h4 {
-        font-size: 1.4 !important;
     }
     ._default_title{
         padding-left: 4.13rem !important;
@@ -12734,7 +12741,7 @@ input._form_control {
 }
 
 .slide_excur_1 .slide_1_flex .images blockquote {
-    font-size: 1.18rem;
+    font-size: 1rem;
     font-weight: 400;
     margin: 6rem 0 0;
     padding: 0 5rem;
@@ -12815,7 +12822,13 @@ input._form_control {
 }
 
 .slide_excurs .slide_flex ._default_title {
-    width: 42%
+    width: 42%;
+}
+
+@media screen and (max-width: 1440px) {
+    .slide_excurs .slide_flex ._default_title h1 {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -12834,7 +12847,7 @@ input._form_control {
     min-height: 12.5rem
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1440px) {
     .slide_excurs .slide_flex ._default_title h1 {
         min-height: 6.5rem
     }
@@ -12848,7 +12861,7 @@ input._form_control {
     position: relative
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1440px) {
     .slide_excurs .slide_flex ._default_title .info_items {
         margin-bottom: 1.5rem
     }
@@ -12872,7 +12885,7 @@ input._form_control {
     padding-bottom: 2.8rem
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1440px) {
     .slide_excurs .slide_flex ._default_title .info_items .item {
         margin-right: 1.5rem;
         padding-bottom: 1.5rem
@@ -13068,7 +13081,7 @@ input._form_control {
 }
 
 .slide_excur_8 .slide_flex .images img {
-    width: 50%;
+    width: 60%;
     position: relative;
     z-index: 2;
     margin-left: 100px;
@@ -13198,6 +13211,12 @@ input._form_control {
     }
 }
 
+@media screen and (max-width: 1366px) {
+    .news_list .news_title ._default_title h1 {
+        font-size: 3.5rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .news_list .news_title ._default_title h1 {
         font-size: 40px;
@@ -13241,7 +13260,7 @@ input._form_control {
     justify-content: center;
     text-align: center;
     flex-grow: 1;
-    font-size: 20px;
+    font-size: 24px;
     color: rgba(255, 255, 255, 1);
     line-height: 30px;
     padding: 1.5rem;
@@ -13546,6 +13565,20 @@ input._form_control {
     font-size: 1.25rem
 }
 
+@media screen and (max-width: 1366px) {
+    .contact_screen .screen_block h3 {
+        font-size: 4rem;
+    }
+    .contact_screen .screen_block .contact_inner .contact_flex .info a, .contact_screen .screen_block .contact_inner .contact_flex .info p {
+        font-size: 1rem
+    }
+    .contact_screen .screen_block .contact_inner .contact_flex .info h5 {
+        margin-bottom: .5rem;
+        color: #fff;
+        font-size: 1.2rem
+    }
+}
+
 @media (max-width: 991px) {
     .contact_screen .screen_block .contact_inner .contact_flex .info a:last-child, .contact_screen .screen_block .contact_inner .contact_flex .info p:last-child {
         margin-bottom: 0
@@ -13567,6 +13600,7 @@ input._form_control {
     opacity: 1;
     transition: all .2s linear;
 }
+
 body:not(.isTouch) .fullpage-wrapper{
     transform: none !important;
 }
