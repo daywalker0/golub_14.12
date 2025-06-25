@@ -11803,9 +11803,16 @@ input._form_control {
 }
 
 .slide_5 .slide_5_flex .team_items .item .img_wrap img {
-    height: 31.25rem;
+    height: 37.25rem;
     max-width: none
 }
+
+@media (max-width: 1440px) {
+    .slide_5 .slide_5_flex .team_items .item .img_wrap img {
+        height: 31.25rem;
+    }
+}
+
 
 @media (max-width: 991px) {
     .slide_5 .slide_5_flex .team_items .item .img_wrap img {
@@ -13138,7 +13145,7 @@ input._form_control {
 
 .slide_excur_9 .slide_flex .images img:last-child {
     margin-left: auto;
-    width: 50%;
+    width: 60%;
     margin-top: -16%;
     z-index: 1
 }
