@@ -12923,10 +12923,6 @@ input._form_control {
     overflow: visible;
 }
 
-.slide_excur_4 .slide_flex ._default_title h1 {
-    font-size: 3.5rem;
-}
-
 .slide_excur_4 .slide_flex ._default_title:before {
     top: 0;
 }
@@ -13081,13 +13077,13 @@ input._form_control {
 }
 
 .slide_excur_4 .slide_flex .images img {
-    width: 30%;
+    width: 40%;
     position: relative;
     z-index: 2
 }
 
 .slide_excur_4 .slide_flex .images img:last-child {
-    width: 50%;
+    width: 60%;
     margin-left: 25%;
     margin-top: -14%;
     z-index: 1
